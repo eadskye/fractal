@@ -47,7 +47,19 @@
 
 
 
-
+   <form>
+   <input type="Button" value="Up" onClick="vals = up(canv,vals)">
+   <input type="Button" value="Down" onClick="vals = down(canv,vals)">
+   <input type="Button" value="Left" onClick="vals = left(canv,vals)">
+   <input type="Button" value="Right" onClick="vals = right(canv,vals)">
+   <input type="Button" value="ZoomIn" onClick="vals = zoomin(canv,vals)">
+   <input type="Button" value="ZoomOut" onClick="vals = zoomout(canv,vals)">
+   <input type="Button" value="Iter +" onClick="vals = moreiter(canv,vals)">
+   <input type="Button" value="Iter -" onClick="vals = lessiter(canv,vals)">
+   <input type="Button" value="Reds" onClick="vals = red(canv,vals)">
+   <input type="Button" value="Greens" onClick="vals = green(canv,vals)">
+   <input type="Button" value="Blues" onClick="vals = blue(canv,vals)">
+   </form>
 
 
 
@@ -74,7 +86,10 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="fractal.js"></script>
-
+    <script>
+    canv = create_canvas();
+    vals = origin(canv);
+    </script>
 
 
 </body>
