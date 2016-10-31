@@ -1,3 +1,25 @@
+// var xhr = new XMLHttpRequest();
+//
+// xhr.addEventListener('load', function() {
+//     if (xhr.status !== 200) {
+//         return;
+//     }
+//
+//     var data = JSON.parse(xhr.responseText);
+//
+//     console.log(data);
+// });
+//
+// xhr.open('GET', 'http://api.screenshotlayer.com/api/capture');
+// access_key = 3d8b343c5404598ade8b229bff96f66a
+// url = 'http://google.com';
+// viewport = 1440x900;
+// width = 250;
+//
+//
+// xhr.send();
+
+
 function mandelIter(cx, cy, maxIter) {
   var x = 0.0;
   var y = 0.0;
@@ -90,7 +112,7 @@ function mandelbrot(canvas, xmin, xmax, ymin, ymax, iterations, color) {
 function create_canvas(){
 var canvas = document.createElement('canvas');
 
-canvas.width = 1200;
+canvas.width = 1440;
 canvas.height = 500; //500;
 //document.body.insertBefore(canvas, document.body.childNodes[0]);
 var main = document.getElementById('main');

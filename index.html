@@ -21,7 +21,7 @@
     <nav class="grey darken-4" role="navigation">
         <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">FractalShop</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Navbar Link</a></li>
+                <li><a href="#">About</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
@@ -30,56 +30,60 @@
         </div>
     </nav>
     <main id="main"></main>
-
-
-    <!-- <script src="fractal.js"></script> -->
-    <!-- <div class="row">
-
-           <div class="row">
-         <div class="col m4 l3 yellow">
-            <p>This text will use 12 columns on a small screen, 4 on a medium screen (m4), and 3 on a large screen (l3).</p>
-         </div>
-         <div class="col s4 m8 l9 grey">
-            <p>This text will use 4 columns on a small screen (s4), 8 on a medium screen (m8), and 9 on a large screen (l9).</p>
-         </div>
-      </div>
-   </div> -->
-
-
-
    <form>
-   <input type="Button" value="Up" onClick="vals = up(canv,vals)">
-   <input type="Button" value="Down" onClick="vals = down(canv,vals)">
-   <input type="Button" value="Left" onClick="vals = left(canv,vals)">
-   <input type="Button" value="Right" onClick="vals = right(canv,vals)">
-   <input type="Button" value="ZoomIn" onClick="vals = zoomin(canv,vals)">
-   <input type="Button" value="ZoomOut" onClick="vals = zoomout(canv,vals)">
-   <input type="Button" value="Iter +" onClick="vals = moreiter(canv,vals)">
-   <input type="Button" value="Iter -" onClick="vals = lessiter(canv,vals)">
-   <input type="Button" value="Reds" onClick="vals = red(canv,vals)">
-   <input type="Button" value="Greens" onClick="vals = green(canv,vals)">
-   <input type="Button" value="Blues" onClick="vals = blue(canv,vals)">
+     <a class="waves-effect waves btn-flat">Up<onClick="vals=up (canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat">Down<onClick="vals = down(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat">Left<onClick="vals= left(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat">Right<onClick="vals = right(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat">Zoom In<onClick="vals = zoomin(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat">Zoom Out<onClick="vals = zoomout(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat">Iter +<onClick="vals = moreiter(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat">Iter -<onClick="vals = lessiter(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat">Reds<onClick="vals = red(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat">Greens<onClick="vals = green(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat">Blues<onClick="vals = blue(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <circle cx="12" cy="12" r="3.2"/>
+         <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+         <path d="M0 0h24v24H0z" fill="none"/>
+     </svg><onClick="vals = blue(canv,vals)"</a><br>
    </form>
+   <div>
+     <footer class="page-footer grey darken-4">
+       <!-- <div class="container"> -->
+         <div class="row">
+           <div class="col l6 s12">
+             <h5 class="white-text">&copy Liz Davis 2016</h5>
+             <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
-
-
-
-
-
-    <footer class="page-footer grey darken-4">
-
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">&copy Liz Davis 2016</h5>
-
-            </div>
-
-
-        </div>
-    </footer>
-
-
+           </div>
+           <div class="col l3 s12">
+             <!-- <h5 class="white-text">Settings</h5> -->
+             <!-- <ul>
+               <li><a class="white-text" href="#!">Link 1</a></li>
+               <li><a class="white-text" href="#!">Link 2</a></li>
+               <li><a class="white-text" href="#!">Link 3</a></li>
+               <li><a class="white-text" href="#!">Link 4</a></li>
+             </ul>
+           </div>
+           <div class="col l3 s12">
+             <h5 class="white-text">Connect</h5>
+             <ul>
+               <li><a class="white-text" href="#!">Link 1</a></li>
+               <li><a class="white-text" href="#!">Link 2</a></li>
+               <li><a class="white-text" href="#!">Link 3</a></li>
+               <li><a class="white-text" href="#!">Link 4</a></li>
+             </ul>
+           </div> -->
+         </div>
+       </div>
+       <div class="footer-copyright">
+         <div class="container">
+         Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+         </div>
+       </div>
+     </footer>
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- <script src="fractal.js"></script> -->
