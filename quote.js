@@ -1,26 +1,31 @@
 "use strict";
 
 $( document ).ready(function() {
+$(".dropdown-button").dropdown();
     getQuote();
     getOutQuote();
 });
 
 function getQuote() {
   $("#zin").click(function() {
-  $.getJSON("https://g-cod.herokuapp.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
+  $.getJSON("https://g-cod.herokuapp.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=20&callback=", function(a) {
     console.log(a);
-    $("body").append(a[0].content + "<p>— " + a[0].title + "</p>");
+    $("#quote").html(a[0].content + "<p>— " + a[0].title + "</p>");
   });
 });
 }
+
 
 function getOutQuote() {
   $("#zout").click(function() {  $.getJSON("https://g-cod.herokuapp.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
     console.log(a);
-    $("body").append(a[0].content + "<p>— " + a[0].title + "</p>");
+    // $("myDiv").empty();
+    $("#quote").html(a[0].content + "<p>— " + a[0].title + "</p>");
   });
 
 });
+
 }
- //
- // https://g-cod.herokuapp.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a)
+
+
+//g-cod.herokuapp.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a)
