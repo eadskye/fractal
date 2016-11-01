@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
 
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -35,18 +35,18 @@
      <a class="waves-effect waves-teal btn-flat">Down<onClick="vals = down(canv,vals)"</a><br>
      <a class="waves-effect waves-teal btn-flat">Left<onClick="vals= left(canv,vals)"</a><br>
      <a class="waves-effect waves-teal btn-flat">Right<onClick="vals = right(canv,vals)"</a><br>
-     <a class="waves-effect waves-teal btn-flat">Zoom In<onClick="vals = zoomin(canv,vals)"</a><br>
-     <a class="waves-effect waves-teal btn-flat">Zoom Out<onClick="vals = zoomout(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat" id= "zin">Zoom In<onClick="vals = zoomin(canv,vals)"</a><br>
+     <a class="waves-effect waves-teal btn-flat" id= "zout">Zoom Out<onClick="vals = zoomout(canv,vals)"</a><br>
      <a class="waves-effect waves-teal btn-flat">Iter +<onClick="vals = moreiter(canv,vals)"</a><br>
      <a class="waves-effect waves-teal btn-flat">Iter -<onClick="vals = lessiter(canv,vals)"</a><br>
      <a class="waves-effect waves-teal btn-flat">Reds<onClick="vals = red(canv,vals)"</a><br>
      <a class="waves-effect waves-teal btn-flat">Greens<onClick="vals = green(canv,vals)"</a><br>
      <a class="waves-effect waves-teal btn-flat">Blues<onClick="vals = blue(canv,vals)"</a><br>
-     <a class="waves-effect waves-teal btn-flat"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+     <!-- <a class="waves-effect waves-teal btn-flat" id="snapshot"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
          <circle cx="12" cy="12" r="3.2"/>
          <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
          <path d="M0 0h24v24H0z" fill="none"/>
-     </svg><onClick="vals = blue(canv,vals)"</a><br>
+     </svg><onClick="vals = blue(canv,vals)"</a><br> -->
    </form>
    <div>
      <footer class="page-footer grey darken-4">
@@ -80,16 +80,17 @@
        </div>
        <div class="footer-copyright">
          <div class="container">
-         Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+         <a class="orange-text text-lighten-3" href="http://materializecss.com"></a>
          </div>
        </div>
      </footer>
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- <script src="fractal.js"></script> -->
     <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
     <script src="fractal.js"></script>
+    <script src="quote.js"></script>
+    <script src="js/init.js"></script> 
     <script>
     canv = create_canvas();
     vals = origin(canv);
