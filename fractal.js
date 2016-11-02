@@ -241,7 +241,7 @@ var dx=vals[4];
 var dy=vals[5];
 var niter=vals[6];
 var color=vals[7];
-niter=2*niter;
+niter=parseInt(1.5*niter);
 mandelbrot(canvas, posx-dx, posx+dx, posy-dy, posy+dy, niter,color);
 var vals=[mag,scale,posx,posy,dx,dy,niter,color];
 return vals;
@@ -257,7 +257,8 @@ var dx=vals[4];
 var dy=vals[5];
 var niter=vals[6];
 var color=vals[7];
-niter=niter/2;
+niter=parseInt(niter/1.5);
+if (niter <=0) {niter=1}
 mandelbrot(canvas, posx-dx, posx+dx, posy-dy, posy+dy, niter,color);
 var vals=[mag,scale,posx,posy,dx,dy,niter,color];
 return vals;
@@ -306,6 +307,14 @@ color="greens";
 mandelbrot(canvas, posx-dx, posx+dx, posy-dy, posy+dy, niter,color);
 var vals=[mag,scale,posx,posy,dx,dy,niter,color];
 return vals;
+}
+
+
+function rand_val(scale){
+
+rand_int=Math.floor(Math.random()*scale)
+
+return rand_int
 }
 
 //
