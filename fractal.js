@@ -109,19 +109,24 @@ function mandelbrot(canvas, xmin, xmax, ymin, ymax, iterations, color) {
 
 
 //define the canvas
-function create_canvas(){
-var canvas = document.createElement('canvas');
-
-canvas.width = 1440;
-canvas.height = 500; //500;
-//document.body.insertBefore(canvas, document.body.childNodes[0]);
-var main = document.getElementById('main');
-console.log(main);
-main.appendChild(canvas);
-// posx=0.0
-// posx=0.0
-return canvas;
+function resizeCanvas(canvas) {
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight * 0.75;
 }
+
+function create_canvas(){
+
+var canvas = document.createElement('canvas');
+var main = document.getElementById('main');
+
+window.addEventListener('resize', resizeCanvas(canvas), false);
+// resizeCanvas(canvas);
+main.appendChild(canvas)
+
+return canvas
+}
+
+
 
 function origin(canvas){
 var mag=0.5; //zoom
